@@ -24,8 +24,14 @@ $(document).ready(function(){
 
 				obj.lat = JSON.parse(data.features[0].geometry.coordinates[1]);
 				obj.lng = JSON.parse(data.features[0].geometry.coordinates[0]);
+<<<<<<< HEAD
 
 			}
+=======
+				markers.push(obj);
+			}
+console.log(markers);
+>>>>>>> added wellington variable
 		initMap(markers);
 		}, error:function(){
 			console.log('error');
@@ -65,12 +71,20 @@ document.getElementsByTagName('body')[0].appendChild(script);
 						// icon : myIcon
 					});
                 // The location of Uluru
+<<<<<<< HEAD
                 // var uluru = {lat: -25.344, lng: 131.036};
                 // // The map, centered at Uluru
                 // var map = new google.maps.Map(
                 //     document.getElementById('map'), {zoom: 4, center: uluru});
                 // // The marker, positioned at Uluru
                 // var marker = new google.maps.Marker({position: uluru, map: map});
+=======
+                var wellington = {lat: -41.2442852, lng: 174.6217707};
+                // The map, centered at Uluru
+               
+                // The marker, positioned at Uluru
+                var marker = new google.maps.Marker({position: wellington, map: map});
+>>>>>>> added wellington variable
               
             
 
